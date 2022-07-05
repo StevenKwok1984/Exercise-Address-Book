@@ -6,9 +6,11 @@ public class AddressBookView {
 
     private UserIO io = new UserIOConsoleImpl();
 
-    public int printMenuAndGetSelection() {
-
+    public void printInitialBanner(){
         io.print("==========");
+    }
+
+    public int printMenuAndGetSelection() {
         io.print("Initial Menu:");
         io.print("1. Add Address");
         io.print("2. Delete Address");
@@ -20,7 +22,7 @@ public class AddressBookView {
         return io.readInt("Please select the operation you wish to perform:", 1, 6);
     }
 
-    public Address getNewStudentInfo() {
+    public Address getNewAddressInfo() {
         String firstName = io.readString("Please enter First Name");
         String lastName = io.readString("Please enter Last Name:");
         String address = io.readString("Please enter Street Address:");
@@ -33,5 +35,11 @@ public class AddressBookView {
     public void displayAddAddressBanner() {
         io.print("Add Address Menu:");
     }
+
+    public void displayAddSuccessBanner() {
+        io.print(". \n . \n .");
+        io.readString("Address added. Press enter to go to Main Menu.");
+    }
+
 
 }

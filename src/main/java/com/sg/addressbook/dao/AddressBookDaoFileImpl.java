@@ -18,7 +18,7 @@ public class AddressBookDaoFileImpl implements AddressBookDao{
 
     @Override
     public List<Address> getAllAddress() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return new HashMap<String, Address>(addresses.keySet(), addresses.values());
     }
 
     @Override
@@ -35,4 +35,6 @@ public class AddressBookDaoFileImpl implements AddressBookDao{
     public List<Address> countAddress() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
+
+
 }
