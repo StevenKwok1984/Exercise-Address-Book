@@ -122,5 +122,9 @@ public class AddressBookView {
         io.print("Unknown Command!!!");
     }
 
+    public void displayErrorMessage(String errorMsg) {
+        io.print("=== ERROR ===");
+        io.print(errorMsg);
+    }
 
 }

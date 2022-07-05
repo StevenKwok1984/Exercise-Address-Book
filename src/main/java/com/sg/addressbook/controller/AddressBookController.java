@@ -1,6 +1,7 @@
 package src.main.java.com.sg.addressbook.controller;
 
 import src.main.java.com.sg.addressbook.dao.AddressBookDao;
+import src.main.java.com.sg.addressbook.dao.AddressBookDaoException;
 import src.main.java.com.sg.addressbook.dao.AddressBookDaoFileImpl;
 import src.main.java.com.sg.addressbook.dto.Address;
 import src.main.java.com.sg.addressbook.ui.AddressBookView;
@@ -20,7 +21,7 @@ public class AddressBookController {
         this.view = view;
     }
 
-    public void run() {
+    public void run() throws AddressBookDaoException {
         boolean keepGoing = true;
         int menuSelection = 0;
         view.printInitialBanner();
@@ -60,34 +61,34 @@ public class AddressBookController {
         return view.printMenuAndGetSelection();
     }
 
-    private void addAddress() {
+    private void addAddress() throws AddressBookDaoException {
         view.displayAddAddressBanner();
         Address newAddress = view.getNewAddressInfo();
         dao.addAddress(newAddress.getLastName(), newAddress);
         view.displayAddSuccessBanner();
     }
 
-    private void listAddresses() {
+    private void listAddresses() throws AddressBookDaoException {
         view.displayAllAddressBanner();
         List<Address> addressList = dao.getAllAddresses();
         view.displayAddressList(addressList);
     }
 
-    private void displayNumOfAddress() {
+    private void displayNumOfAddress() throws AddressBookDaoException {
         view.displayCountAddressBanner();
         int num = dao.countAddress();
         view.displayAddressCount(num);
     }
 
 
-    private void viewAddress() {
+    private void viewAddress() throws AddressBookDaoException {
         view.displayFindAddressBanner();
         String lastName = view.getLastNameChoiceFind();
         Address address = dao.getAddress(lastName);
         view.displayStudent(address);
     }
 
-    public void removeAddress() {
+    public void removeAddress() throws AddressBookDaoException {
         view.displayRemoveAddressBanner();
         String lastName = view.getLastNameChoiceDelete();
         view.deleteOrNot();

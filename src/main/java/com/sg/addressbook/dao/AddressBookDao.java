@@ -7,14 +7,14 @@ import java.util.Map;
 
 public interface AddressBookDao {
 
-    Address addAddress(String lastName, Address address);
+    Address addAddress(String lastName, Address address) throws AddressBookDaoException;
 
 
-    List<Address> getAllAddresses();
+    List<Address> getAllAddresses() throws AddressBookDaoException;
 
-    Address getAddress(String lastName);
+    Address getAddress(String lastName) throws AddressBookDaoException;
 
-    Address removeAddress(String lastName);
+    Address removeAddress(String lastName) throws AddressBookDaoException;
 
-    int countAddress();
+    int countAddress() throws AddressBookDaoException;
 }
