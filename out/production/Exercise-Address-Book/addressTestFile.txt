@@ -1,4 +1,2 @@
-Sally::Jones::45 Elm Street Applegrove, OH 44321
-Steven::Chow::110 St James Road, Glasgow, G4 0PS
-Derek::Chan::85 Kelvinhaugh Street, Glasgow, G3 8PS
-Tom::Wong::Apartment 12, 1 Firth Street, Huddersfield, HD1 3BB
+Tommy::Kong::110 St James Road, Glasgow, G4 0PS
+Marco::Trump::17 Cauldeen Rd, Inverness IV2 4UQ
