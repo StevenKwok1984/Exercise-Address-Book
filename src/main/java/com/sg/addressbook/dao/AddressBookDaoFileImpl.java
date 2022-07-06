@@ -8,10 +8,19 @@ import java.util.*;
 public class AddressBookDaoFileImpl implements AddressBookDao{
 
 
-    public static final String ADDRESS_FILE = "address.txt";
+    public final String ADDRESS_FILE;
     public static final String DELIMITER = "::";
 
-    Map<String, Address> addresses = new HashMap<String, Address>();
+    private Map<String, Address> addresses = new HashMap<String, Address>();
+
+
+    public AddressBookDaoFileImpl(String testFile) {
+        ADDRESS_FILE = testFile;
+    }
+    public AddressBookDaoFileImpl() {
+        ADDRESS_FILE = "address.txt";
+    }
+
 
     @Override
     public Address addAddress(String lastName, Address address) throws AddressBookDaoException {

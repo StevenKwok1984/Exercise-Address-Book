@@ -85,7 +85,7 @@ public class AddressBookController {
         view.displayFindAddressBanner();
         String lastName = view.getLastNameChoiceFind();
         Address address = dao.getAddress(lastName);
-        view.displayStudent(address);
+        view.displayAddress(address);
     }
 
     public void removeAddress() throws AddressBookDaoException {

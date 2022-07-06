@@ -82,7 +82,7 @@ public class AddressBookView {
         return io.readString("Please enter last name of address to find:");
     }
 
-    public void displayStudent(Address address) {
+    public void displayAddress(Address address) {
         if (address != null) {
             io.print(address.getFirstName() + " " + address.getLastName());
             io.print("\n "+ address.getAddress());

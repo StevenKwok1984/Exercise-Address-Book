@@ -1,0 +1,10 @@
+Sally::Jones::45 Elm Street Applegrove, OH 44321
+Steven::Chow::110 St James Road, Glasgow, G4 0PS
+Derek::Chan::85 Kelvinhaugh Street, Glasgow, G3 8PS
+Tom::Wong::Apartment 12, 1 Firth Street, Huddersfield, HD1 3BB
+Daniel::Maclay::7 Mayfield Rd, Edinburgh EH9 2NG
+Harry::Beggs::4 Ross Rise, Belfast BT12 4SP
+Morgaon::Salmon::Harehills, Leeds LS8 5LX
+Tom::Holly::35 Sibthorp St, Lincoln LN5 7SL
+Genius::RedField::27 East Dr, Brighton BN2 0BQ
+Pizza::Pinnaples::32 Waterston Rd, Cardiff CF14 2SS
